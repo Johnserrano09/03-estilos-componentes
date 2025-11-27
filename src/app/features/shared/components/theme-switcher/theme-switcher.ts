@@ -16,7 +16,7 @@ export class ThemeSwitcher {
     });
   }
 
-  themes = ['valentine', 'dark', 'light'];
+  themes = ['light', 'dark', 'caramellatte'];
   readonly themeService = inject(ThemeService);
 
   currentTheme = signal<string>(this.getCurrentTheme());

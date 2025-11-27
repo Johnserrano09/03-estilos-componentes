@@ -5,7 +5,7 @@ import { Injectable, signal } from '@angular/core';
 })
 export class ThemeService {
   THEME_KEY = 'app-theme';
-  themes = ['valentine', 'dark', 'light'];
+  themes = ['light', 'dark', 'caramellatte'];
 
   saveTheme(theme: string) {
     const themeJson = JSON.stringify(theme);
@@ -14,7 +14,7 @@ export class ThemeService {
 
   getTheme() {
     const themeJson = localStorage.getItem(this.THEME_KEY);
-    if (!themeJson) return 'valentine';
+    if (!themeJson) return 'dark';
     return JSON.parse(themeJson);
   }
 

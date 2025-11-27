@@ -30,6 +30,10 @@
           },
           "configurations": {
             "production": {
+                "baseHref": "/03-estilos-componentes/",
+                 "deployUrl": "/03-estilos-componentes/"
+,
+
               "budgets": [
                 {
                   "type": "initial",
